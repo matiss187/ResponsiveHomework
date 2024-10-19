@@ -1,50 +1,46 @@
 body {
     background-color: #dedede;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 32px;
+    font-size: 2em;
+    margin: 20px 0;
 }
 
 a {
     color: #000;
     text-decoration: none;
-    font-family: Arial, sans-serif;
 }
 
 p {
-    font-size: 25px;
-    font-family: Arial, sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 10px 0;
 }
 
 img {
     width: 100%;
-}
-
-p {
-    text-align: center;
-}
-
-div img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: auto;
+    border-radius: 8px;
 }
 
 div {
     display: inline-block;
-    width: 24%;
-    margin: 5px;
-    padding: 2px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-@media (min-width: 772px) {
+@media (max-width: 771px) {
     div {
-        width: 45%;
-        height: auto;
+        width: 95%;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     div img {
@@ -53,8 +49,25 @@ div {
     }
 }
 
+
+@media (min-width: 772px) {
+    div {
+        width: 45%;
+        margin: 10px;
+    }
+
+    div img {
+        max-height: 30vh;
+    }
+}
+
 @media (min-width: 998px) {
     div {
         width: 30%;
+    }
+
+    div img {
+        max-height: 30vh;
+        width: auto;
     }
 }
